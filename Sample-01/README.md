@@ -71,6 +71,14 @@ npm run dev
 npm run build
 ```
 
+## Deployment to Vercel
+See https://community.auth0.com/t/middleware-error-when-deploying-to-vercel/176243
+Rename AUTH0_ISSUER_BASE_URL to AUTH0_DOMAIN
+For the value of AUTH0_DOMAIN, exclude https://. For example, johnlim.auth0.com.
+
+Rename AUTH0_BASE_URL to APP_BASE_URL since it was renamed in v4.
+
+
 ### Docker build
 
 To build and run the Docker image, run `exec.sh`, or `exec.ps1` on Windows.
